@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>hello vue</title>
+        <script type="text/javascript" src="../vue.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <h1>hello {{name.toUpperCase()}} {{Date.now()}}</h1>
+            <hr/>
+            <a :href=url>点我 {{school.name}}</a>
+        </div>
+        <script type="text/javascript">
+            Vue.config.productionTip=false
+
+            new Vue({
+                el: '#root',
+                data: {
+                    name: 'world',
+                    url: 'http://www.baidu.com',
+                    school:{
+                        name:'zz'
+                    }
+                }
+            })
+            
+
+        </script>
+    </body>
+</html>

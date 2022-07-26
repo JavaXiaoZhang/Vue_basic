@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>hello vue</title>
+        <script type="text/javascript" src="../vue.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            单向数据绑定:<input type="text" :value="name">
+            <br/>
+            双向数据绑定:<input type="text" v-model:value="name">
+            双向数据绑定简写:<input type="text" v-model="name">
+        </div>
+        <script type="text/javascript">
+            Vue.config.productionTip=false
+
+            new Vue({
+                el: '#root',
+                data: {
+                    name: 'world',
+                    url: 'http://www.baidu.com',
+                    school:{
+                        name:'zz'
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>

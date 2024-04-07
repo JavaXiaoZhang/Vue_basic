@@ -1,0 +1,19 @@
+h1{
+    color: red;
+    background-color: black;
+    text-align: center;
+}
+p {
+    color: gray;
+}
+#test {
+    background-color: blue;
+}
+.pClass {
+    color: blue;
+    font-size: 2em;
+}
+.big-center {
+    font-size: 3em;
+    text-align: center;
+}

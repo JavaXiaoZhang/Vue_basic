@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <h1>插值语法</h1>
+        <h3>{{name}}</h3>
+        <hr>
+        <h1>指令语法</h1>
+        <a v-bind:href=url>链接</a>
+    </div>
+    <script type="text/javascript">
+        Vue.config.productionTip = false
+        
+        new Vue({
+            el: '#root',
+            data:{
+                name: 'javk',
+                url: 'http://www.baidu.com'
+            }
+        })
+    </script>
+</body>
+</html>

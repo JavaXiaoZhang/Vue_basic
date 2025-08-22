@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./尚品汇_顶部导航栏/css/reset.css">
+    <style>
+        .outer {
+            width: 1400px;
+            height: 500px;
+            background-color: gray;
+            /* overflow: hidden; */
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: nowrap; */
+            flex-flow: row nowrap;
+            /* justify-content: center; */
+            /* justify-items: center; */
+            /* 一行 */
+            /* align-items: center; */
+            /* 多行 */
+            /* align-content: center; */
+            /* flex-shrink: 1; */
+            /* flex: auto; */
+        }
+        .inner {
+            /* float: left; */
+            /* position: relative; */
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            border: 1px solid red;
+            box-sizing: border-box;
+            /* margin: auto; */
+        }
+        .inner3 {
+            /* flex-shrink: 10; */
+        }
+        
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        .page-header {
+            height: 70px;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .page-header ul{
+            display: flex;
+        }
+        .page-header li a {
+            color: white;
+            font-size: 20px;
+            border: 1px solid white;
+            border-radius: 8px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+        .content {
+            height: calc(100vh - 70px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-nav {
+            height: 300px;
+            width: 1000px;
+            background-color: gray;
+            
+        }
+        .content-nav ul {
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .content-nav li{
+            width: 180px;
+            height: 200px;
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .content-nav li:hover {
+            box-shadow: 0 0 10px black;
+            transform: scale(1.02) rotate(30deg);
+            transition: 0.5s linear;
+        }
+        .content-nav li span {
+            font-size: 20px;
+            color: white;
+        }
+        .content-nav li:nth-child(1) {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="outer">
+        <div class="inner">1</div>
+        <div class="inner">2</div>
+        <div class="inner inner3">3</div>
+        <div class="inner">4</div>
+        <div class="inner">5</div>
+        <div class="inner">6</div>
+        <div class="inner">7</div>
+        <div class="inner">8</div>
+        <div class="inner">9</div>
+    </div> -->
+
+    <header class="page-header">
+        <a href="#">
+            <img src="./尚品汇_顶部导航栏/images/logo.png" alt="">
+        </a>
+        <ul>
+            <li><a href="#">国内校区</a></li>
+            <li><a href="#">A校区</a></li>
+            <li><a href="#">缅甸校区</a></li>
+            <li><a href="#">美国校区</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="content-nav">
+            <ul>
+                <li>
+                    <img src="./尚品汇_顶部导航栏/images/icon_众筹_nor.png" alt="">
+                    <span>众筹</span>
+                </li>
+                <li>
+                    <img src="./尚品汇_顶部导航栏/images/icon_众筹_nor.png" alt="">
+                    <span>众筹</span>
+                </li>
+                <li>
+                    <img src="./尚品汇_顶部导航栏/images/icon_众筹_nor.png" alt="">
+                    <span>众筹</span>
+                </li>
+                <li>
+                    <img src="./尚品汇_顶部导航栏/images/icon_众筹_nor.png" alt="">
+                    <span>众筹</span>
+                </li>
+                <li>
+                    <img src="./尚品汇_顶部导航栏/images/icon_众筹_nor.png" alt="">
+                    <span>众筹</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

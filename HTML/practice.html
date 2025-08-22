@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            margin-bottom: 10%;
+        }
+        h1~strong{
+            margin-left: 20%;
+            font-size: 50px;
+            color: red;
+        }
+        .out {
+            height: 200px;
+            background-color: red;
+            margin-left: 5%;
+        }
+        .testFont{
+            font: italic 300 10px "Impact2","Comic Sans MS";
+            background-color: blue;
+            line-height: 10px;
+            height: 30px;
+            display: block;
+        }
+        .testFont2{
+            font: italic 300 10px "Impact2","Comic Sans MS";
+            background-color: green;
+            line-height: 1.5;
+            vertical-align: middle;
+            height: 30px;
+        }
+        span.container>div{
+            display: inline;
+            color: blue;
+        }
+        span code{
+            display: block;
+            text-align: center;
+            font-size: large;
+            background-color: black;
+            color: purple;
+            line-height: 100px;
+        }
+        [name="account"] {
+            height: 20px;
+        }
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: gray;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>测试新闻标题</h1>
+    <div class="out">
+        <div class="testFont">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nostrum culpa commodi modi saepe. Perspiciatis in vero odit nobis? Illum numquam ipsum odit alias hic ut totam consectetur, soluta doloremque?
+        Ea, quibusdam dolores. Culpa, doloremque totam non illo, sed quaerat doloribus voluptates magni ex veniam, a assumenda perspiciatis similique earum placeat nam nihil delectus sequi voluptas! Omnis optio impedit necessitatibus!
+        Reiciendis, excepturi laborum, voluptate accusantium voluptatibus tempore delectus soluta ex, temporibus nesciunt amet ratione aspernatur. Quod voluptatum amet eaque explicabo asperiores laborum aspernatur, maiores, et provident optio debitis perspiciatis eos.</div>
+        <span class="testFont2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum ab officiis natus, esse laboriosam dolor excepturi assumenda voluptate voluptatibus, unde possimus dicta mollitia iure molestiae obcaecati asperiores reprehenderit repellendus.</span>
+    </div>
+    <strong>
+        央视网新闻
+    </strong>:
+    <span class="container">
+        今日
+        <div>
+            <em>重要消息</em>
+        </div>
+        <code><pre>hello      world!</pre></code>
+    </span>
+    <!-- <img src="../favicon.ico" alt=""> -->
+
+    <table border="1">
+        <caption>模板</caption>
+        <thead>
+            <tr>
+                <th>字段名</th>
+                <th>字段类型</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>字段1</td>
+                <td>varchar</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总计：2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <form action="https://search.jd.com/search">
+        <div>
+            <span>账户：</span>
+            <input type="text" name="account">
+        </div>
+        <div>
+            <span>密码：</span>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <span>性别：</span>
+            <input type="radio" name="sex" value="M">男
+            <input type="radio" name="sex" value="F">女
+        </div>
+        <div>
+            <span>爱好：</span>
+            <input type="checkbox" name="hobby" value="book">看书
+            <input type="checkbox" name="hobby" value="CC">铲铲
+        </div>
+        <div>
+            <span>其他：</span>
+            <textarea name="other" rows="3" cols="10"></textarea>
+        </div>
+        <div>
+            <span>籍贯：</span>
+            <select name="place">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select>
+        </div>
+        <button type="submit">确认</button>
+        <button type="reset">重置</button>
+    </form>
+    <br>
+
+    <a href="https://www.bilibili.com" target="frame">开B站</a>
+    <iframe name="frame"  frameborder="0" width="900" height="300"></iframe>
+
+    <form action="https://search.jd.com/search" target="search">
+        <label for="keyword">关键字</label>
+        <input id="keyword" name="keyword" type="text">
+        <input type="submit" value="搜索">
+    </form>
+    <iframe name="search" frameborder="0" width="400" height="400"></iframe>
+</body>
+</html>

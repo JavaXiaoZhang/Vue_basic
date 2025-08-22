@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../vue.js"></script>
+    <style>
+        *{
+            margin: 20px 20px;
+        }
+        .div2{
+            border: solid red 1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <h2>欢迎来到{{name}}</h2>
+        <a href="http://www.baidu.com" @click.prevent="showInfo">请点击</a>
+
+        <div class="div2" @click="maopao">
+            <button @click.stop="maopao">按钮</button>
+        </div>
+
+        <button @click.once="maopao">按钮</button>
+    </div>
+
+    <script type="text/javascript">
+        Vue.config.productionTip = false
+
+        const vm = new Vue({
+            el: '#root',
+            data:{
+                name: 'root'
+            },
+            methods:{
+                showInfo(e){
+                    // e.preventDefault()
+                    alert('aa')
+                },
+                maopao(event){
+                    // event.stopPropagation()
+                    alert()
+                }
+            }
+        })
+    </script>
+</body>
+</html>

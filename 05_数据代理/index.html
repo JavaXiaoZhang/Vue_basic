@@ -6,27 +6,30 @@
         <script type="text/javascript" src="../vue.js"></script>
     </head>
     <body>
-        <div id="root">
-            <h1>hello {{name.toUpperCase()}} {{Date.now()}}</h1>
-            <hr/>
-            <a :href=url>点我 {{school.name}}</a>
-        </div>
         <script type="text/javascript">
-            Vue.config.productionTip=false
+            Vue.config.productionTip = false
 
-            new Vue({
-                el: '#root',
-                data(){
-                    return{
-                        name: 'world',
-                        url: 'http://www.baidu.com',
-                        school:{
-                            name:'zz'
-                    }
-                    }
+            let sex = 'm'
+            let person = {
+                name: 'zs',
+                age:18
+            }
+
+            Object.defineProperty(person, 'sex', {
+                // value: 'm',
+                // enumerable:true,
+                // writable:true,
+                // configurable:true,
+                get:function(){
+                    console.log('invoke get')
+                    return sex
+                },
+                set(value){
+                    console.log('invoke set')
+                    sex = value
                 }
             })
-            
+            console.log(person)
 
         </script>
     </body>

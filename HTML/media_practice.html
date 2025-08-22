@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 300px;
+            background-image: linear-gradient(30deg,red,green,blue);
+            margin: auto;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            line-height: 300px;
+            text-shadow: 0 0 10px black ;
+        }
+        @media print {
+            .box {
+                background-image:none;
+                background-color: black;
+            }
+        }
+        @media (min-width: 1000px) {
+            .box {
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        新年快乐
+    </div>
+</body>
+</html>

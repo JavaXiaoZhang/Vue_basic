@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        .outer:hover .box{
+            width: 1000px;
+        }
+        .box1 {
+            background-color: yellow;
+            transition-timing-function: ease;
+        }
+        .box2 {
+            background-color: green;
+            transition-timing-function:linear;
+        }
+        .box3 {
+            background-color: blue;
+        }
+        .outer2 {
+            width: 500px;
+            height: 313px;
+            position: relative;
+            overflow: hidden;
+        }
+        .boxxx {
+            width: 500px;
+            height: 313px;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: 0.5s linear all;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            line-height: 313px;
+        }
+        .outer2:hover .boxxx {
+            opacity: 0.5;
+        }
+        img {
+            transition: 0.5s linear all;
+        }
+        .outer2:hover img {
+            transform: scale(1.3) rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <div class="outer2">
+        <img src="../favicon.ico" alt="">
+        <div class="boxxx">Dark Souls</div>
+    </div>
+</body>
+</html>

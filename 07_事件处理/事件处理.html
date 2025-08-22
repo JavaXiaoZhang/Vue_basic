@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <h1>hello, {{name}}</h1>
+        <!-- <button v-on:click="showInfo"> -->
+        <button @click="showInfo(6,$event)">
+            点我
+        </button>
+    </div>
+    <script type="text/javascript">
+        Vue.config.productionTip=false
+
+        const vm = new Vue({
+            // el: '#root',
+            data(){
+                return {
+                    name: 'Vue2'
+                }
+            },
+            methods:{
+                showInfo(param){
+                    console.log(event)
+                    console.log(this.name)
+                    console.log(param)
+                    alert('hello')
+                }
+            }
+        })
+        vm.$mount('#root')
+    </script>
+</body>
+</html>

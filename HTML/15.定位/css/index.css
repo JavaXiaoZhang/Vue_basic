@@ -1,0 +1,26 @@
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header{
+    
+}
+.header .topnav{
+    background-color: gray;
+    height: 50px;
+    line-height: 50px;
+}
+.header .topnav>li{
+    float: left;
+    margin: 0 30px;
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    background-color: red;
+}
+.header .topnav>li .secondnav{
+    width: 400px;
+    line-height: 20px;
+    position: absolute;
+}
